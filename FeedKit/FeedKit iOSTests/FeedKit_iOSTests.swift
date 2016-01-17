@@ -1,15 +1,15 @@
 //
-//  FeedKitTests.swift
-//  FeedKitTests
+//  FeedKit_iOSTests.swift
+//  FeedKit iOSTests
 //
 //  Created by Shao-Ping Lee on 1/17/16.
 //  Copyright © 2016 Simon Lee. All rights reserved.
 //
 
 import XCTest
-@testable import FeedKit
+@testable import FeedKit_iOS
 
-class FeedKitTests: XCTestCase {
+class FeedKit_iOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

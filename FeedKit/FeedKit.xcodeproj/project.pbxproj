@@ -7,43 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F48AD12F1C4C38EC00D3150F /* FeedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F48AD12E1C4C38EC00D3150F /* FeedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F48AD1361C4C38EC00D3150F /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD12B1C4C38EC00D3150F /* FeedKit.framework */; };
-		F48AD13B1C4C38EC00D3150F /* FeedKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD13A1C4C38EC00D3150F /* FeedKitTests.swift */; };
+		F48AD25A1C4C531800D3150F /* FeedKit iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F48AD2591C4C531800D3150F /* FeedKit iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48AD2611C4C531800D3150F /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2571C4C531800D3150F /* FeedKit.framework */; };
+		F48AD2661C4C531800D3150F /* FeedKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2651C4C531800D3150F /* FeedKit_iOSTests.swift */; };
+		F48AD2921C4C540300D3150F /* FeedKit OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = F48AD2911C4C540300D3150F /* FeedKit OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48AD2991C4C540300D3150F /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD28F1C4C540200D3150F /* FeedKit.framework */; };
+		F48AD29E1C4C540300D3150F /* FeedKit_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD29D1C4C540300D3150F /* FeedKit_OSXTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F48AD1371C4C38EC00D3150F /* PBXContainerItemProxy */ = {
+		F48AD2621C4C531800D3150F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F48AD1221C4C38EC00D3150F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F48AD12A1C4C38EC00D3150F;
-			remoteInfo = FeedKit;
+			remoteGlobalIDString = F48AD2561C4C531800D3150F;
+			remoteInfo = "FeedKit iOS";
+		};
+		F48AD29A1C4C540300D3150F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F48AD1221C4C38EC00D3150F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F48AD28E1C4C540200D3150F;
+			remoteInfo = "FeedKit OSX";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F48AD12B1C4C38EC00D3150F /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F48AD12E1C4C38EC00D3150F /* FeedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedKit.h; sourceTree = "<group>"; };
-		F48AD1301C4C38EC00D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F48AD1351C4C38EC00D3150F /* FeedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F48AD13A1C4C38EC00D3150F /* FeedKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedKitTests.swift; sourceTree = "<group>"; };
-		F48AD13C1C4C38EC00D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AD2571C4C531800D3150F /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48AD2591C4C531800D3150F /* FeedKit iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedKit iOS.h"; sourceTree = "<group>"; };
+		F48AD25B1C4C531800D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AD2601C4C531800D3150F /* FeedKit iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FeedKit iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48AD2651C4C531800D3150F /* FeedKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedKit_iOSTests.swift; sourceTree = "<group>"; };
+		F48AD2671C4C531800D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AD28F1C4C540200D3150F /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48AD2911C4C540300D3150F /* FeedKit OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedKit OSX.h"; sourceTree = "<group>"; };
+		F48AD2931C4C540300D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AD2981C4C540300D3150F /* FeedKit OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FeedKit OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48AD29D1C4C540300D3150F /* FeedKit_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedKit_OSXTests.swift; sourceTree = "<group>"; };
+		F48AD29F1C4C540300D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F48AD1271C4C38EC00D3150F /* Frameworks */ = {
+		F48AD2531C4C531800D3150F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F48AD1321C4C38EC00D3150F /* Frameworks */ = {
+		F48AD25D1C4C531800D3150F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48AD1361C4C38EC00D3150F /* FeedKit.framework in Frameworks */,
+				F48AD2611C4C531800D3150F /* FeedKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD28B1C4C540200D3150F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD2951C4C540300D3150F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48AD2991C4C540300D3150F /* FeedKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +84,10 @@
 		F48AD1211C4C38EC00D3150F = {
 			isa = PBXGroup;
 			children = (
-				F48AD12D1C4C38EC00D3150F /* FeedKit */,
-				F48AD1391C4C38EC00D3150F /* FeedKitTests */,
+				F48AD2581C4C531800D3150F /* FeedKit iOS */,
+				F48AD2641C4C531800D3150F /* FeedKit iOSTests */,
+				F48AD2901C4C540300D3150F /* FeedKit OSX */,
+				F48AD29C1C4C540300D3150F /* FeedKit OSXTests */,
 				F48AD12C1C4C38EC00D3150F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,78 +95,142 @@
 		F48AD12C1C4C38EC00D3150F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F48AD12B1C4C38EC00D3150F /* FeedKit.framework */,
-				F48AD1351C4C38EC00D3150F /* FeedKitTests.xctest */,
+				F48AD2571C4C531800D3150F /* FeedKit.framework */,
+				F48AD2601C4C531800D3150F /* FeedKit iOSTests.xctest */,
+				F48AD28F1C4C540200D3150F /* FeedKit.framework */,
+				F48AD2981C4C540300D3150F /* FeedKit OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F48AD12D1C4C38EC00D3150F /* FeedKit */ = {
+		F48AD2581C4C531800D3150F /* FeedKit iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F48AD12E1C4C38EC00D3150F /* FeedKit.h */,
-				F48AD1301C4C38EC00D3150F /* Info.plist */,
+				F48AD2591C4C531800D3150F /* FeedKit iOS.h */,
+				F48AD25B1C4C531800D3150F /* Info.plist */,
 			);
-			path = FeedKit;
+			path = "FeedKit iOS";
 			sourceTree = "<group>";
 		};
-		F48AD1391C4C38EC00D3150F /* FeedKitTests */ = {
+		F48AD2641C4C531800D3150F /* FeedKit iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				F48AD13A1C4C38EC00D3150F /* FeedKitTests.swift */,
-				F48AD13C1C4C38EC00D3150F /* Info.plist */,
+				F48AD2651C4C531800D3150F /* FeedKit_iOSTests.swift */,
+				F48AD2671C4C531800D3150F /* Info.plist */,
 			);
-			path = FeedKitTests;
+			path = "FeedKit iOSTests";
+			sourceTree = "<group>";
+		};
+		F48AD2901C4C540300D3150F /* FeedKit OSX */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD2911C4C540300D3150F /* FeedKit OSX.h */,
+				F48AD2931C4C540300D3150F /* Info.plist */,
+			);
+			path = "FeedKit OSX";
+			sourceTree = "<group>";
+		};
+		F48AD29C1C4C540300D3150F /* FeedKit OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD29D1C4C540300D3150F /* FeedKit_OSXTests.swift */,
+				F48AD29F1C4C540300D3150F /* Info.plist */,
+			);
+			path = "FeedKit OSXTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F48AD1281C4C38EC00D3150F /* Headers */ = {
+		F48AD2541C4C531800D3150F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48AD12F1C4C38EC00D3150F /* FeedKit.h in Headers */,
+				F48AD25A1C4C531800D3150F /* FeedKit iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD28C1C4C540200D3150F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48AD2921C4C540300D3150F /* FeedKit OSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F48AD12A1C4C38EC00D3150F /* FeedKit */ = {
+		F48AD2561C4C531800D3150F /* FeedKit iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F48AD13F1C4C38EC00D3150F /* Build configuration list for PBXNativeTarget "FeedKit" */;
+			buildConfigurationList = F48AD2681C4C531800D3150F /* Build configuration list for PBXNativeTarget "FeedKit iOS" */;
 			buildPhases = (
-				F48AD1261C4C38EC00D3150F /* Sources */,
-				F48AD1271C4C38EC00D3150F /* Frameworks */,
-				F48AD1281C4C38EC00D3150F /* Headers */,
-				F48AD1291C4C38EC00D3150F /* Resources */,
+				F48AD2521C4C531800D3150F /* Sources */,
+				F48AD2531C4C531800D3150F /* Frameworks */,
+				F48AD2541C4C531800D3150F /* Headers */,
+				F48AD2551C4C531800D3150F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FeedKit;
-			productName = FeedKit;
-			productReference = F48AD12B1C4C38EC00D3150F /* FeedKit.framework */;
+			name = "FeedKit iOS";
+			productName = "FeedKit iOS";
+			productReference = F48AD2571C4C531800D3150F /* FeedKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F48AD1341C4C38EC00D3150F /* FeedKitTests */ = {
+		F48AD25F1C4C531800D3150F /* FeedKit iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F48AD1421C4C38EC00D3150F /* Build configuration list for PBXNativeTarget "FeedKitTests" */;
+			buildConfigurationList = F48AD26B1C4C531800D3150F /* Build configuration list for PBXNativeTarget "FeedKit iOSTests" */;
 			buildPhases = (
-				F48AD1311C4C38EC00D3150F /* Sources */,
-				F48AD1321C4C38EC00D3150F /* Frameworks */,
-				F48AD1331C4C38EC00D3150F /* Resources */,
+				F48AD25C1C4C531800D3150F /* Sources */,
+				F48AD25D1C4C531800D3150F /* Frameworks */,
+				F48AD25E1C4C531800D3150F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F48AD1381C4C38EC00D3150F /* PBXTargetDependency */,
+				F48AD2631C4C531800D3150F /* PBXTargetDependency */,
 			);
-			name = FeedKitTests;
-			productName = FeedKitTests;
-			productReference = F48AD1351C4C38EC00D3150F /* FeedKitTests.xctest */;
+			name = "FeedKit iOSTests";
+			productName = "FeedKit iOSTests";
+			productReference = F48AD2601C4C531800D3150F /* FeedKit iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F48AD28E1C4C540200D3150F /* FeedKit OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48AD2A01C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSX" */;
+			buildPhases = (
+				F48AD28A1C4C540200D3150F /* Sources */,
+				F48AD28B1C4C540200D3150F /* Frameworks */,
+				F48AD28C1C4C540200D3150F /* Headers */,
+				F48AD28D1C4C540200D3150F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedKit OSX";
+			productName = "FeedKit OSX";
+			productReference = F48AD28F1C4C540200D3150F /* FeedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F48AD2971C4C540300D3150F /* FeedKit OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48AD2A31C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSXTests" */;
+			buildPhases = (
+				F48AD2941C4C540300D3150F /* Sources */,
+				F48AD2951C4C540300D3150F /* Frameworks */,
+				F48AD2961C4C540300D3150F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F48AD29B1C4C540300D3150F /* PBXTargetDependency */,
+			);
+			name = "FeedKit OSXTests";
+			productName = "FeedKit OSXTests";
+			productReference = F48AD2981C4C540300D3150F /* FeedKit OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -146,10 +243,16 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Simon Lee";
 				TargetAttributes = {
-					F48AD12A1C4C38EC00D3150F = {
+					F48AD2561C4C531800D3150F = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					F48AD1341C4C38EC00D3150F = {
+					F48AD25F1C4C531800D3150F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F48AD28E1C4C540200D3150F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F48AD2971C4C540300D3150F = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -166,21 +269,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F48AD12A1C4C38EC00D3150F /* FeedKit */,
-				F48AD1341C4C38EC00D3150F /* FeedKitTests */,
+				F48AD2561C4C531800D3150F /* FeedKit iOS */,
+				F48AD25F1C4C531800D3150F /* FeedKit iOSTests */,
+				F48AD28E1C4C540200D3150F /* FeedKit OSX */,
+				F48AD2971C4C540300D3150F /* FeedKit OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F48AD1291C4C38EC00D3150F /* Resources */ = {
+		F48AD2551C4C531800D3150F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F48AD1331C4C38EC00D3150F /* Resources */ = {
+		F48AD25E1C4C531800D3150F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD28D1C4C540200D3150F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD2961C4C540300D3150F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,28 +309,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F48AD1261C4C38EC00D3150F /* Sources */ = {
+		F48AD2521C4C531800D3150F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F48AD1311C4C38EC00D3150F /* Sources */ = {
+		F48AD25C1C4C531800D3150F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48AD13B1C4C38EC00D3150F /* FeedKitTests.swift in Sources */,
+				F48AD2661C4C531800D3150F /* FeedKit_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD28A1C4C540200D3150F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48AD2941C4C540300D3150F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48AD29E1C4C540300D3150F /* FeedKit_OSXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F48AD1381C4C38EC00D3150F /* PBXTargetDependency */ = {
+		F48AD2631C4C531800D3150F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F48AD12A1C4C38EC00D3150F /* FeedKit */;
-			targetProxy = F48AD1371C4C38EC00D3150F /* PBXContainerItemProxy */;
+			target = F48AD2561C4C531800D3150F /* FeedKit iOS */;
+			targetProxy = F48AD2621C4C531800D3150F /* PBXContainerItemProxy */;
+		};
+		F48AD29B1C4C540300D3150F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F48AD28E1C4C540200D3150F /* FeedKit OSX */;
+			targetProxy = F48AD29A1C4C540300D3150F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -257,10 +396,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -300,72 +439,144 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F48AD1401C4C38EC00D3150F /* Debug */ = {
+		F48AD2691C4C531800D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FeedKit/Info.plist;
+				INFOPLIST_FILE = "FeedKit iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simonlee.FeedKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOS";
+				PRODUCT_MODULE_NAME = FeedKit;
+				PRODUCT_NAME = FeedKit;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		F48AD1411C4C38EC00D3150F /* Release */ = {
+		F48AD26A1C4C531800D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FeedKit/Info.plist;
+				INFOPLIST_FILE = "FeedKit iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simonlee.FeedKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOS";
+				PRODUCT_MODULE_NAME = FeedKit;
+				PRODUCT_NAME = FeedKit;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		F48AD1431C4C38EC00D3150F /* Debug */ = {
+		F48AD26C1C4C531800D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = FeedKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simonlee.FeedKitTests;
+				INFOPLIST_FILE = "FeedKit iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		F48AD1441C4C38EC00D3150F /* Release */ = {
+		F48AD26D1C4C531800D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = FeedKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simonlee.FeedKitTests;
+				INFOPLIST_FILE = "FeedKit iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F48AD2A11C4C540300D3150F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FeedKit OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-OSX";
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		F48AD2A21C4C540300D3150F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "FeedKit OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-OSX";
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Release;
+		};
+		F48AD2A41C4C540300D3150F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FeedKit OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		F48AD2A51C4C540300D3150F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FeedKit OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Release;
 		};
@@ -381,23 +592,37 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F48AD13F1C4C38EC00D3150F /* Build configuration list for PBXNativeTarget "FeedKit" */ = {
+		F48AD2681C4C531800D3150F /* Build configuration list for PBXNativeTarget "FeedKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F48AD1401C4C38EC00D3150F /* Debug */,
-				F48AD1411C4C38EC00D3150F /* Release */,
+				F48AD2691C4C531800D3150F /* Debug */,
+				F48AD26A1C4C531800D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		F48AD1421C4C38EC00D3150F /* Build configuration list for PBXNativeTarget "FeedKitTests" */ = {
+		F48AD26B1C4C531800D3150F /* Build configuration list for PBXNativeTarget "FeedKit iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F48AD1431C4C38EC00D3150F /* Debug */,
-				F48AD1441C4C38EC00D3150F /* Release */,
+				F48AD26C1C4C531800D3150F /* Debug */,
+				F48AD26D1C4C531800D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		F48AD2A01C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48AD2A11C4C540300D3150F /* Debug */,
+				F48AD2A21C4C540300D3150F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F48AD2A31C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48AD2A41C4C540300D3150F /* Debug */,
+				F48AD2A51C4C540300D3150F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

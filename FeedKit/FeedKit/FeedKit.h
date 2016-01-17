@@ -6,7 +6,7 @@
 //  Copyright © 2016 Simon Lee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for FeedKit.
 FOUNDATION_EXPORT double FeedKitVersionNumber;

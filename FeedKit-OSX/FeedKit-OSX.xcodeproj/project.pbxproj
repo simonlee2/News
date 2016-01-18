@@ -13,7 +13,6 @@
 		F48AD2121C4C4BDD00D3150F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48AD2101C4C4BDD00D3150F /* Main.storyboard */; };
 		F48AD21D1C4C4BDD00D3150F /* FeedKit_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD21C1C4C4BDD00D3150F /* FeedKit_OSXTests.swift */; };
 		F48AD2281C4C4BDD00D3150F /* FeedKit_OSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2271C4C4BDD00D3150F /* FeedKit_OSXUITests.swift */; };
-		F48AD2E21C4C631E00D3150F /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2E11C4C631E00D3150F /* FeedKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		F48AD2231C4C4BDD00D3150F /* FeedKit-OSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FeedKit-OSXUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48AD2271C4C4BDD00D3150F /* FeedKit_OSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedKit_OSXUITests.swift; sourceTree = "<group>"; };
 		F48AD2291C4C4BDD00D3150F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F48AD2E11C4C631E00D3150F /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = ../FeedKit/build/Debug/FeedKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48AD2E21C4C631E00D3150F /* FeedKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +75,6 @@
 		F48AD1FE1C4C4BDD00D3150F = {
 			isa = PBXGroup;
 			children = (
-				F48AD2E11C4C631E00D3150F /* FeedKit.framework */,
 				F48AD2091C4C4BDD00D3150F /* FeedKit-OSX */,
 				F48AD21B1C4C4BDD00D3150F /* FeedKit-OSXTests */,
 				F48AD2261C4C4BDD00D3150F /* FeedKit-OSXUITests */,
@@ -479,6 +475,7 @@
 				F48AD22E1C4C4BDD00D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48AD22F1C4C4BDD00D3150F /* Build configuration list for PBXNativeTarget "FeedKit-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +484,7 @@
 				F48AD2311C4C4BDD00D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48AD2321C4C4BDD00D3150F /* Build configuration list for PBXNativeTarget "FeedKit-OSXUITests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +493,7 @@
 				F48AD2341C4C4BDD00D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

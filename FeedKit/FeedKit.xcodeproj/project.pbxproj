@@ -17,6 +17,8 @@
 		F48AD2B01C4C58B400D3150F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */; };
 		F48AD2BF1C4C601600D3150F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2BE1C4C601600D3150F /* Feed.swift */; };
 		F48AD2C01C4C601600D3150F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2BE1C4C601600D3150F /* Feed.swift */; };
+		F48AD2E41C4C649C00D3150F /* FeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2E31C4C649C00D3150F /* FeedTest.swift */; };
+		F48AD2E51C4C649C00D3150F /* FeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2E31C4C649C00D3150F /* FeedTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		F48AD2AD1C4C58B400D3150F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		F48AD2BE1C4C601600D3150F /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Source/Feed.swift; sourceTree = "<group>"; };
+		F48AD2E31C4C649C00D3150F /* FeedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 			children = (
 				F48AD2671C4C531800D3150F /* Info-iOS.plist */,
 				F48AD29F1C4C540300D3150F /* Info-OSX.plist */,
+				F48AD2E31C4C649C00D3150F /* FeedTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -354,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD2E41C4C649C00D3150F /* FeedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD2E51C4C649C00D3150F /* FeedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,16 +529,19 @@
 		F48AD26C1C4C531800D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F48AD26D1C4C531800D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.FeedKit-iOSTests";
@@ -594,6 +603,7 @@
 		F48AD2A41C4C540300D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tests/Info-OSX.plist";
@@ -603,6 +613,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
@@ -610,6 +621,7 @@
 		F48AD2A51C4C540300D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Tests/Info-OSX.plist";

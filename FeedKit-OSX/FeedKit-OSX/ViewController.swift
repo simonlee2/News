@@ -7,11 +7,14 @@
 //
 
 import Cocoa
+import FeedKit
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let f = Feed()
+        print(f.fetch())
 
         // Do any additional setup after loading the view.
     }

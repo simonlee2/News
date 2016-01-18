@@ -15,6 +15,8 @@
 		F48AD2AC1C4C58A300D3150F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2AA1C4C58A300D3150F /* SwiftyJSON.framework */; };
 		F48AD2AF1C4C58B400D3150F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2AD1C4C58B400D3150F /* Alamofire.framework */; };
 		F48AD2B01C4C58B400D3150F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */; };
+		F48AD2BF1C4C601600D3150F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2BE1C4C601600D3150F /* Feed.swift */; };
+		F48AD2C01C4C601600D3150F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2BE1C4C601600D3150F /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		F48AD2AA1C4C58A300D3150F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		F48AD2AD1C4C58B400D3150F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F48AD2BE1C4C601600D3150F /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Source/Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 				F48AD2911C4C540300D3150F /* FeedKit.h */,
 				F48AD25B1C4C531800D3150F /* Info-iOS.plist */,
 				F48AD2931C4C540300D3150F /* Info-OSX.plist */,
+				F48AD2BE1C4C601600D3150F /* Feed.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -342,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD2BF1C4C601600D3150F /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD2C01C4C601600D3150F /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +484,7 @@
 		F48AD2691C4C531800D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -490,12 +497,14 @@
 				PRODUCT_MODULE_NAME = FeedKit;
 				PRODUCT_NAME = FeedKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F48AD26A1C4C531800D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -534,6 +543,7 @@
 		F48AD2A11C4C540300D3150F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -551,6 +561,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
@@ -558,6 +569,7 @@
 		F48AD2A21C4C540300D3150F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -630,6 +642,7 @@
 				F48AD26A1C4C531800D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48AD26B1C4C531800D3150F /* Build configuration list for PBXNativeTarget "FeedKit iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -638,6 +651,7 @@
 				F48AD26D1C4C531800D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48AD2A01C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSX" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +660,7 @@
 				F48AD2A21C4C540300D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48AD2A31C4C540300D3150F /* Build configuration list for PBXNativeTarget "FeedKit OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -654,6 +669,7 @@
 				F48AD2A51C4C540300D3150F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

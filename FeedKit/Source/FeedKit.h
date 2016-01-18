@@ -6,7 +6,7 @@
 //  Copyright © 2016 Simon Lee. All rights reserved.
 //
 
-@import Foundation
+@import Foundation;
 
 //! Project version number for FeedKit OSX.
 FOUNDATION_EXPORT double FeedKit_OSXVersionNumber;

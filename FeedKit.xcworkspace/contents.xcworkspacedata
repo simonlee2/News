@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FeedKit-iOS/FeedKit-iOS.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:FeedKit-OSX/FeedKit-OSX.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:FeedKit/FeedKit.xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,15 +4,15 @@ xcode_workspace: FeedKit.xcworkspae
 xcode_scheme: FeedKit-iOS
 xcode_sdk: iphonesimulator9.2
 env:
-	global:
-		- FRAMEWORK_NAME=FeedKit
+  global:
+    - FRAMEWORK_NAME=FeedKit
 before_install:
-	- brew update
-	- brew install carthage
+  - brew update
+  - brew install carthage
 before_script:
-	- carthage bootstrap
+  - carthage bootstrap
 script:
-	- ./fastlane/travis.sh
+  - ./fastlane/travis.sh
 before_deploy:
-	- carthage build --no-skip-current
-	- carthage archive $FRAMEWORK_NAME
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME

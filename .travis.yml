@@ -3,10 +3,10 @@ osx_image: xcode7.2
 xcode_workspace: FeedKit.xcworkspace
 xcode_sdk: iphonesimulator9.2
 env:
-  global:
-    - FRAMEWORK_NAME=FeedKit
-    - IOS_FRAMEWORK_SCHEME="FeedKit iOS"
-    - OSX_FRAMEWORK_SCHEME="FeedKit OSX"
+    global:
+        - FRAMEWORK_NAME=FeedKit
+        - IOS_FRAMEWORK_SCHEME="FeedKit iOS"
+        - OSX_FRAMEWORK_SCHEME="FeedKit OSX"
     matrix:
         - DESTINATION="OS=8.1,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"
         - DESTINATION="OS=8.2,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"

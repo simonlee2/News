@@ -12,7 +12,7 @@ public class Feed {
     var title: String
     
     public init() {
-        title = "Dummy Title"
+        title = "Actual Title"
     }
     
     public func fetch() -> String {

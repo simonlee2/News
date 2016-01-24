@@ -14,7 +14,7 @@ platform :ios do
 	end
 end
 
-platform :osx do
+platform :mac do
 
     before_all do
         ensure_git_status_clean

@@ -11,6 +11,7 @@ platform :ios do
 	desc "Run all the tests"
 	lane :test do
 		scan(device: "iPhone 6s (9.2)", scheme: "FeedKit iOS")
+        scan(device: "OS X", scheme: "FeedKit OSX")
 	end
 end
 

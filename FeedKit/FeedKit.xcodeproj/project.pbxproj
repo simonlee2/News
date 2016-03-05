@@ -19,6 +19,8 @@
 		F48AD2C01C4C601600D3150F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2BE1C4C601600D3150F /* Feed.swift */; };
 		F48AD2E41C4C649C00D3150F /* FeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2E31C4C649C00D3150F /* FeedTest.swift */; };
 		F48AD2E51C4C649C00D3150F /* FeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD2E31C4C649C00D3150F /* FeedTest.swift */; };
+		F48AD3C51C8B7D4100D3150F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD3C41C8B7D4100D3150F /* PromiseKit.framework */; };
+		F48AD3C71C8B7D5400D3150F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD3C61C8B7D5400D3150F /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		F48AD2BE1C4C601600D3150F /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Source/Feed.swift; sourceTree = "<group>"; };
 		F48AD2E31C4C649C00D3150F /* FeedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTest.swift; sourceTree = "<group>"; };
+		F48AD3C41C8B7D4100D3150F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		F48AD3C61C8B7D5400D3150F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD3C71C8B7D5400D3150F /* PromiseKit.framework in Frameworks */,
 				F48AD2AB1C4C58A300D3150F /* Alamofire.framework in Frameworks */,
 				F48AD2AC1C4C58A300D3150F /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD3C51C8B7D4100D3150F /* PromiseKit.framework in Frameworks */,
 				F48AD2AF1C4C58B400D3150F /* Alamofire.framework in Frameworks */,
 				F48AD2B01C4C58B400D3150F /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -97,6 +103,8 @@
 		F48AD1211C4C38EC00D3150F = {
 			isa = PBXGroup;
 			children = (
+				F48AD3C61C8B7D5400D3150F /* PromiseKit.framework */,
+				F48AD3C41C8B7D4100D3150F /* PromiseKit.framework */,
 				F48AD2AD1C4C58B400D3150F /* Alamofire.framework */,
 				F48AD2AE1C4C58B400D3150F /* SwiftyJSON.framework */,
 				F48AD2A91C4C58A300D3150F /* Alamofire.framework */,
@@ -495,7 +503,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Source/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -515,7 +526,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Source/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -559,7 +573,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Source/Info-OSX.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -585,7 +602,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Source/Info-OSX.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
